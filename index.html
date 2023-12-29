@@ -1,5 +1,68 @@
-<html>
-  <body>
-    Please make me pretty uwu
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tara Tai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,700;1,400&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="SiteHeaderElement.js"></script>
+<script type="module" src="SiteFooterElement.js"></script>
+</head>
+<body>
+    <site-header></site-header>
+    <main>
+        <section>
+            <p class="book-cover">
+                <img src="assets/single-player.png" alt="Single Player Book Cover">
+            </p>
+            <h2>Single Player</h2>
+            <p>In 'Single Player,' two rival game developers find unexpected love amidst the quirky chaos of the gaming world, proving that sometimes, the best co-op adventures happen off-screen. <span class="attribution">2023</span></p>
+            <div class="button-row">
+                <a class="button" href="single-player.html">Learn more</a>
+                <a class="button" href="single-player.html#buy">Buy</a>
+            </div>
+        </section>
+
+        <section id="events">
+            <h3>Events</h3>
+
+            <article class="event">
+                <header>
+                    <h4>Roundabout Books & Cafe</h4>
+                </header>
+                <section class="event-details">
+                    <address>900 NW Washington Dr. Suite 100, Bend, OR</address>
+                    <p>
+                        <time datetime="2024-03-18T18:00">6:00 PM</time> – 
+                        <time datetime="2024-03-18T20:00">8:00 PM</time>
+                    </p>
+                </section>
+                <footer>
+                    <p>The event is free, but please register to guarantee seating.</p>
+                    <a href="https://example.com/register" class="register-button">Register</a>
+                </footer>
+            </article>
+            <article class="event">
+                <header>
+                    <h4>Roundabout Books & Cafe</h4>
+                </header>
+                <section class="event-details">
+                    <address>900 NW Washington Dr. Suite 100, Bend, OR</address>
+                    <p>
+                        <time datetime="2024-03-18T18:00">6:00 PM</time> – 
+                        <time datetime="2024-03-18T20:00">8:00 PM</time>
+                    </p>
+                </section>
+                <footer>
+                    <p>The event is free, but please register to guarantee seating.</p>
+                    <a href="https://example.com/register" class="register-button">Register</a>
+                </footer>
+            </article>
+        </section>
+    </main>
+    <site-footer></site-footer>
+</body>
 </html>
