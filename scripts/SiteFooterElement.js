@@ -113,7 +113,7 @@ nav > a:hover {
     <a class="social" href="#"><img src="assets/tiktok.svg" alt="TikTok"></a>
   </div>
   
-  <p class="attribution" style="text-align: center;">Website made by Adam Butterworth</p>
+  <p class="attribution" style="text-align: center;">Website by: Adam Butterworth</p>
 </footer>
 `;
 

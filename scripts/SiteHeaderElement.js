@@ -17,16 +17,14 @@ const templateString = `
   --drop-shadow: 0 1px 10px rgba(0,0,0,.1);
   box-shadow: var(--drop-shadow);
 }
-#site-header .container {
-  padding: 0 var(--space-xxl);
-  margin: 0 auto;
-}
 
 #site-header .row {
   display: flex;
   justify-content: space-between;
   height: 4rem;
   align-items: center;
+  padding: 0 var(--space-xxl);
+  margin: 0 auto;
 }
 
 .logotype {
@@ -107,22 +105,20 @@ nav > a:hover {
 
 <div id="sentinel"></div>
 <header id="site-header">
-  <div class="container">
-    <div class="row">
-      <a class="logotype" href="index.html">Tara Tai</a>
-      <button id="main-menu-button" aria-label="Menu" aria-controls="navigation" aria-expanded="false">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
-          <rect class="line top" x="3" y="6" width="15" height="2"/>
-          <rect class="line middle" x="3" y="11" width="18" height="2"/>
-          <rect class="line bottom" x="3" y="16" width="13" height="2"/>
-        </svg>
-      </button>
-      <nav id="site-nav" aria-label="Main navigation">
-        <a href="single-player.html">Book</a>
-        <a href="bio.html">Bio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
+  <div class="row">
+    <a class="logotype" href="index.html">Tara Tai</a>
+    <button id="main-menu-button" aria-label="Menu" aria-controls="navigation" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+        <rect class="line top" x="3" y="6" width="15" height="2"/>
+        <rect class="line middle" x="3" y="11" width="18" height="2"/>
+        <rect class="line bottom" x="3" y="16" width="13" height="2"/>
+      </svg>
+    </button>
+    <nav id="site-nav" aria-label="Main navigation">
+      <a href="single-player.html">Book</a>
+      <a href="bio.html">Bio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </div>
 </header>
 `;
