@@ -51,7 +51,6 @@ body {
 main {
   max-width: var(--body-max-width);
   margin: 2rem auto 0;
-
 }
 
 img {
@@ -210,15 +209,6 @@ blockquote > footer {
   margin: 0;
 }
 
-.book-cover {
-  max-height: 75vh;
-  display: flex;
-}
-.book-cover img {
-  max-height: 100%;
-  object-fit: contain;
-}
-
 
 
 /* 
@@ -237,4 +227,13 @@ section + section:before {
 main > section {
   padding: 0 var(--space-xxl);
 }
+
+main:after {
+  content: '';
+  display: block;
+  border-bottom: solid 1px var(--subdued-bg);
+  margin: 2rem;
+}
+
+
 

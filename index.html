@@ -8,7 +8,20 @@
   <link rel="stylesheet" href="styles/fonts.css">
   <link rel="stylesheet" href="styles/main.css">
   <script type="module" src="scripts/SiteHeaderElement.js"></script>
+  <script type="module" src="scripts/MiniBioElement.js"></script>
   <script type="module" src="scripts/SiteFooterElement.js"></script>
+  <style>
+    .book-cover {
+      max-height: 75vh;
+      display: flex;
+    }
+    .book-cover img {
+      max-height: 100%;
+      object-fit: cover;
+      border-radius: 4px;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
   <site-header></site-header>
@@ -62,6 +75,8 @@
       </article>
     </section>
   </main>
-  <site-footer></site-footer>
+  <site-footer>
+    <mini-bio></mini-bio>
+  </site-footer>
 </body>
 </html>
