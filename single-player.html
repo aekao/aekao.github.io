@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +8,22 @@
   <link rel="stylesheet" href="styles/fonts.css">
   <link rel="stylesheet" href="styles/main.css">
   <script type="module" src="scripts/SiteHeaderElement.js"></script>
-  <script type="module" src="scripts/MiniBioElement.js"></script>
-  <script type="module" src="scripts/SiteFooterElement.js"></script>
+  <script type="module" src="scripts/SiteElements.js"></script>
 </head>
 <body>
-  <site-header></site-header>
+  <header>
+    <site-header></site-header>
+  </header>
   <main>
-    <section>
-      <h1 class="text-center">Single Player</h1>
-
-      <blockquote cite="https://www.example.com">
-        <p>Charming, witty, and surprisingly poignant. Alex and Jordan's journey is not one to be missed!</p>
-        <footer>— LitLovers Magazine</footer>
-      </blockquote>
-
-      <p class="book-cover">
+    <section class="container">
+      <div class="mb-lg">
+        <h1 class="center serif">Single Player</h1>
+        <blockquote class="mb-lg" cite="https://www.example.com">
+          <p>Charming, witty, and surprisingly poignant. Alex and Jordan's journey is not one to be missed!</p>
+          <footer>— LitLovers Magazine</footer>
+        </blockquote>
         <img src="assets/single-player.png" alt="Single Player Book Cover">
-      </p>
+      </div>
 
       <p class="lead">
         Single Player is a heartwarming journey into the world of game development where rivalry turns to romance.
@@ -36,36 +35,37 @@
         As the narrative unfolds, "Single Player" cleverly intertwines the exhilarating highs and lows of game development with the unpredictable path of love. With witty dialogue, humorous scenarios, and a cast of colorful supporting characters, the book is a testament to the unexpected ways in which love can blossom. As Alex and Jordan navigate their professional challenges, they also embark on a personal journey of understanding and acceptance. Their story is a reminder that sometimes, the most rewarding collaborations come from the most unlikely partnerships. Perfect for fans of romantic comedies and gaming culture, "Single Player" offers a unique blend of laughter, passion, and the magic of finding love where you least expect it.
       </p>
     </section>
-    <section>
+    <section class="container">
       <h3 id="buy">Buy the book</h3>
-
       <p>
         Buy local in Boston: <a href="">Brookline Booksmith</a>, <a href="">Harvard Bookstore</a>
       </p>
-
       <p>
         Buy online: <a href="">Amazon</a>, <a href="">Barnes & Noble</a>, <a href="">Books-A-Million</a>, <a href="">Powell’s</a>, <a href="">IndieBound</a>
       </p>
     </section>
-    <section>
-    <blockquote cite="https://www.example.com">
-      <p>An irresistible blend of humor and heart. 'Single Player' hits all the right notes in the symphony of love and games.</p>
-      <footer>– Reader's Realm</footer>
-    </blockquote>
+    <section class="container">
+      <blockquote cite="https://www.example.com">
+        <p>An irresistible blend of humor and heart. 'Single Player' hits all the right notes in the symphony of love and games.</p>
+        <footer>– Reader's Realm</footer>
+      </blockquote>
 
-    <blockquote cite="https://www.example.com">
-      <p>A masterclass in romantic comedy. This book will make you laugh, cry, and fall in love with love all over again.</p>
-      <footer>– The Novel Enthusiast</footer>
-    </blockquote>
+      <blockquote cite="https://www.example.com">
+        <p>A masterclass in romantic comedy. This book will make you laugh, cry, and fall in love with love all over again.</p>
+        <footer>– The Novel Enthusiast</footer>
+      </blockquote>
 
-    <blockquote cite="https://www.example.com">
-      <p>Brilliantly captures the spirit of modern romance amidst the intriguing backdrop of video game development. A must-read!</p>
-      <footer>– Contemporary Romantics Journal</footer>
-    </blockquote>
+      <blockquote cite="https://www.example.com">
+        <p>Brilliantly captures the spirit of modern romance amidst the intriguing backdrop of video game development. A must-read!</p>
+        <footer>– Contemporary Romantics Journal</footer>
+      </blockquote>
     </section>
   </main>
-  <site-footer>
+  <footer>
     <mini-bio></mini-bio>
-  </site-footer>
+    <social-row></social-row>
+    <site-nav aria-label="Footer navigation"></site-nav>
+    <p class="attribution center">Website by Adam Butterworth</p>
+  </footer>
 </body>
 </html>

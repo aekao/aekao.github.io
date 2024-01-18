@@ -28,7 +28,7 @@ const templateString = `
 }
 
 .logotype {
-  font-family: var(--heading-font-family);
+  font-family: var(--serif-font-family);
   font-size: 1.125rem;
   text-transform: uppercase;
   color: var(--primary-color) !important;

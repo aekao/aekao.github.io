@@ -8,8 +8,7 @@
   <link rel="stylesheet" href="styles/fonts.css">
   <link rel="stylesheet" href="styles/main.css">
   <script type="module" src="scripts/SiteHeaderElement.js"></script>
-  <script type="module" src="scripts/MiniBioElement.js"></script>
-  <script type="module" src="scripts/SiteFooterElement.js"></script>
+  <script type="module" src="scripts/SiteElements.js"></script>
   <style>
     .book-cover {
       max-height: 75vh;
@@ -26,8 +25,8 @@
 <body>
   <site-header></site-header>
   <main>
-    <section>
-      <p class="book-cover">
+    <section class="container">
+      <p class="mb-lg">
         <img src="assets/single-player.png" alt="Single Player Book Cover">
       </p>
       <h2>Single Player</h2>
@@ -38,36 +37,32 @@
       </div>
     </section>
 
-    <section id="events">
+    <section id="events" class="container">
       <h3>Events</h3>
 
       <article class="event">
-        <header>
+        <div class="event-details">
           <h4>Roundabout Books & Cafe</h4>
-        </header>
-        <section class="event-details">
           <address>900 NW Washington Dr. Suite 100, Bend, OR</address>
           <p>
             <time datetime="2024-03-18T18:00">6:00 PM</time> – 
             <time datetime="2024-03-18T20:00">8:00 PM</time>
           </p>
-        </section>
+        </div>
         <footer>
           <p>The event is free, but please register to guarantee seating.</p>
           <a href="https://example.com/register" class="register-button">Register</a>
         </footer>
       </article>
       <article class="event">
-        <header>
+        <div class="event-details">
           <h4>Roundabout Books & Cafe</h4>
-        </header>
-        <section class="event-details">
           <address>900 NW Washington Dr. Suite 100, Bend, OR</address>
           <p>
             <time datetime="2024-03-18T18:00">6:00 PM</time> – 
             <time datetime="2024-03-18T20:00">8:00 PM</time>
           </p>
-        </section>
+        </div>
         <footer>
           <p>The event is free, but please register to guarantee seating.</p>
           <a href="https://example.com/register" class="register-button">Register</a>
@@ -75,8 +70,11 @@
       </article>
     </section>
   </main>
-  <site-footer>
+  <footer>
     <mini-bio></mini-bio>
-  </site-footer>
+    <social-row></social-row>
+    <footer-nav></footer-nav>
+    <p class="attribution center">Website by Adam Butterworth</p>
+  </footer>
 </body>
 </html>
