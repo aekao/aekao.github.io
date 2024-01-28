@@ -7,20 +7,20 @@ const templateString = `
   height: 1px;
 }
 
-#site-header {
+header {
   position: sticky;
   top: 0;
   z-index: 100;
   transition: box-shadow .25s ease;
 }
 
-#site-header.is-pinned {
+header.is-pinned {
   background-color: var(--primary-bg);
   --drop-shadow: 0 1px 10px rgba(0,0,0,.1);
   box-shadow: var(--drop-shadow);
 }
 
-#site-header .row {
+.row {
   display: flex;
   justify-content: space-between;
   height: 4rem;
@@ -69,26 +69,6 @@ const templateString = `
   opacity: 0;
 }
 
-@media (max-width: 700px) {
-  #main-menu-button {
-    display: block;
-  }
-
-  #site-nav {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    display: none;
-    background: white;
-  }
-  
-  #site-nav.active {
-    display: block;
-    box-shadow: 0 1px 0 rgba(0,0,0,.1);
-  }
-}
-
 nav {
   display: flex;
   padding: var(--space-md) 0;
@@ -108,6 +88,27 @@ nav > a:hover {
   color: inherit;
   border-radius: var(--radius);
 }
+
+@media (max-width: 700px) {
+  #main-menu-button {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    background: white;
+  }
+  
+  nav.active {
+    display: block;
+    box-shadow: 0 1px 0 rgba(0,0,0,.1);
+  }
+}
+
 </style>
 
 <div id="sentinel"></div>
@@ -148,7 +149,6 @@ class SiteHeader extends HTMLElement {
       menuButton.setAttribute('aria-expanded', !expanded);
       navigation.classList.toggle('active');
     });
-
 
     // Observe when the header is "stuck" at the top
     const headerElement = shadow.getElementById('site-header');

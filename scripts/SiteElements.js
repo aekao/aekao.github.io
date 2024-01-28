@@ -32,7 +32,7 @@ class MiniBio extends HTMLElement {
       
       .attribution {
         color: var(--subdued-color);
-        font-size: 0.75rem;
+        font-size: var(--font-size-sm);
         font-style: normal;
         margin: var(--space-sm) 0 0;
       }
