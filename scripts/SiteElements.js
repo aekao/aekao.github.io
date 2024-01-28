@@ -119,7 +119,7 @@ class FooterNav extends HTMLElement {
       
       </style>
       <nav aria-label="Footer navigation">
-        <a href="index.html">Home</a>
+        <a href="index-new.html">Home</a>
         <a href="single-player.html">Book</a>
         <a href="bio.html">Bio</a>
         <a href="contact.html">Contact</a>

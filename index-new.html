@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tara Tai, Author of Single Player">
+  <title>Tara Tai</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles/main.css">
+  <script type="module" src="scripts/SiteHeaderElement.js"></script>
+  <script type="module" src="scripts/SiteElements.js"></script>
+  <style>
+    .book-cover {
+      max-height: 75vh;
+      display: flex;
+    }
+    .book-cover img {
+      max-height: 100%;
+      object-fit: cover;
+      border-radius: 4px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <site-header></site-header>
+  <main>
+    <section class="container">
+      <p class="mb-lg">
+        <img src="assets/single-player.jpg" alt="Single Player Book Cover">
+      </p>
+      <h2>Single Player</h2>
+      <p>In 'Single Player,' two rival game developers find unexpected love amidst the quirky chaos of the gaming world, proving that sometimes, the best co-op adventures happen off-screen. <span class="attribution">2023</span></p>
+      <div class="button-row">
+        <a class="button" href="single-player.html">More about Single Player</a>
+        <a class="button" href="single-player.html#buy">Buy</a>
+      </div>
+    </section>
+
+    <!-- <section id="events" class="container">
+      <h3>Events</h3>
+
+      <article class="event">
+        <div class="event-details">
+          <h4>Some Bookstore or Cafe</h4>
+          <address>0000 Massachusetts Avenue, Boston, MA</address>
+          <p>
+            <time datetime="2024-03-18T18:00">6:00 PM</time> – 
+            <time datetime="2024-03-18T20:00">8:00 PM</time>
+          </p>
+        </div>
+        <footer>
+          <p>The event is free, but please register to guarantee seating.</p>
+          <a href="https://example.com/register" class="register-button">Register</a>
+        </footer>
+      </article>
+    </section> -->
+  </main>
+  <footer>
+    <mini-bio></mini-bio>
+    <social-row></social-row>
+    <footer-nav></footer-nav>
+    <p class="attribution center">Website by Adam Butterworth</p>
+  </footer>
+</body>
+</html>

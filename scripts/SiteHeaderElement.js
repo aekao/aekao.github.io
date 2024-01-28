@@ -1,5 +1,6 @@
 const templateString = `
 <style>
+
 #sentinel {
   position: absolute;
   top: 0;
@@ -12,6 +13,7 @@ const templateString = `
   z-index: 100;
   transition: box-shadow .25s ease;
 }
+
 #site-header.is-pinned {
   background-color: var(--primary-bg);
   --drop-shadow: 0 1px 10px rgba(0,0,0,.1);
@@ -48,17 +50,21 @@ const templateString = `
   fill: #000;
   transition: transform 0.4s ease, width 0.4s ease, opacity 0.4s ease;
 }
+
 #main-menu-button .line.top { transform-origin: center; }
 #main-menu-button .line.middle { transform-origin: center; }
 #main-menu-button .line.bottom { transform-origin: center; }
+
 #main-menu-button[aria-expanded="true"] .line.top {
   transform: rotate(45deg) translateY(5px);
   width: 18px;
 }
+
 #main-menu-button[aria-expanded="true"] .line.bottom {
   transform: rotate(-45deg) translateY(-5px);
   width: 18px;
 }
+
 #main-menu-button[aria-expanded="true"] .line.middle {
   opacity: 0;
 }
@@ -67,6 +73,7 @@ const templateString = `
   #main-menu-button {
     display: block;
   }
+
   #site-nav {
     position: absolute;
     top: 100%;
@@ -80,8 +87,8 @@ const templateString = `
     display: block;
     box-shadow: 0 1px 0 rgba(0,0,0,.1);
   }
-
 }
+
 nav {
   display: flex;
   padding: var(--space-md) 0;
@@ -106,7 +113,7 @@ nav > a:hover {
 <div id="sentinel"></div>
 <header id="site-header">
   <div class="row">
-    <a class="logotype" href="index.html">Tara Tai</a>
+    <a class="logotype" href="index-new.html">Tara Tai</a>
     <button id="main-menu-button" aria-label="Menu" aria-controls="navigation" aria-expanded="false">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
         <rect class="line top" x="3" y="6" width="15" height="2"/>
