@@ -4,24 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Tara Tai, Author of Single Player">
-  <title>Tara Tai • Biography</title>
+  <title>Tara Tai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Rubik+Mono+One&family=Rubik:wght@300..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
-  <script type="module" src="scripts/SiteHeaderElement.js"></script>
-  <script type="module" src="scripts/SiteElements.js"></script>
 </head>
 <body>
-  <site-header></site-header>
-  <main class="container">
-    <h3>About Tara</h3>
-    <div class="bio">
-      <p>Tara Tai is an Asian American writer living in Boston, where they spend most of their time playing TTRPGs and romancing video game NPCs. She holds degrees from Harvard University and Harvard Business School. 'Single Player' is her debut novel.</p>
-    </div>
+  <header class="inverted">
+    <h1 aria-label="Tara Tai"><a href="index-new.html"><img src="assets/logotype.svg" /></a></h1>
+    <p>Tara Tai is an Asian American writer living in Boston, where they spend most of their time playing TTRPGs and romancing video game NPCs. She holds degrees from Harvard University and Harvard Business School. 'Single Player' is her debut novel.</p>
+    <nav aria-label="Main navigation">
+      <a href="single-player.html">Book</a>
+      <a href="bio.html">Bio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <figure style="border: solid 2px white; position: absolute; left: 100%; top: 50vh; transform:translateY(-50%); margin-left: -30px; width:160px;">
+      <img src="assets/tara-360w.jpg" alt="description"/>
+      <figcaption style="position: absolute; left: 35px; margin-top:3px;">Photo by Nicole Loeb</figcaption>
+    </figure>
+  </header>
+  <main>
+    <section>
+    <h2>About Tara</h2>
+    <p>(GPT generated) Tara Tai is a distinguished author based in Boston, Massachusetts, celebrated for her engaging storytelling and rich, imaginative narratives. Tara's journey into the literary world began with her passion for writing, nurtured through years of dedicated practice and a deep love for literature. Her academic path led her to Harvard Business School (HBS), where she graduated with distinction. The combination of her creative talents and business savvy has been instrumental in her successful writing career, enabling her to navigate the literary landscape with both artistic flair and strategic prowess.</p>
+    <p>When not crafting compelling stories, Tara immerses herself in the fantastical world of Dungeons and Dragons (D&D). As an avid Dungeon Master (DM), she brings her storytelling skills to the table, creating intricate worlds and adventures for her friends. These gaming sessions showcase her imaginative power and ability to bring stories to life in any form, much to the delight of her fellow players. For Tara, D&D is more than a hobby; it's a vibrant outlet for her creativity and a testament to her ability to engage and entertain.</p>
+    <p style="display: flex; justify-content: center; gap: 1px;">
+      <img src="assets/audrey-ginko.jpg" alt="description" style="height: 200px;"/>
+      <img src="assets/ginko.jpg" alt="description" style="height: 200px;"/>
+    </p>
+    <p>Tara's personal life is as fulfilling as her professional one, shared with her wife, Audrey. Together, they enjoy a harmonious life in Boston, filled with intellectual conversations and shared moments of joy. Their family is completed by their beloved dog, Ginko, who brings both joy and a bit of playful chaos. Tara, a dedicated pet parent, is often seen in Boston's parks, ensuring Ginko's well-being and enjoying the city's beauty. This blend of professional achievement, creative expression, and a rich personal life establishes Tara Tai as a notable and respected figure in Boston's literary community.</p>
+  </section>
   </main>
-  <footer>
-    <social-row></social-row>
-    <site-nav aria-label="Footer navigation"></site-nav>
-    <p class="attribution center">Website by Adam Butterworth</p>
-  </footer>
 </body>
 </html>

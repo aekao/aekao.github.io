@@ -5,62 +5,131 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Tara Tai, Author of Single Player">
   <title>Tara Tai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Rubik+Mono+One&family=Rubik:wght@300..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
-  <script type="module" src="scripts/SiteHeaderElement.js"></script>
-  <script type="module" src="scripts/SiteElements.js"></script>
-  <style>
-    .book-cover {
-      max-height: 75vh;
-      display: flex;
-    }
-    .book-cover img {
-      max-height: 100%;
-      object-fit: cover;
-      border-radius: 4px;
-      width: 100%;
-    }
-  </style>
 </head>
 <body>
-  <site-header></site-header>
+  <header class="inverted">
+    <h1 aria-label="Tara Tai"><a href="index-new.html"><img src="assets/logotype.svg" /></a></h1>
+    <p>Tara Tai is an Asian American writer living in Boston, where they spend most of their time playing TTRPGs and romancing video game NPCs. She holds degrees from Harvard University and Harvard Business School. 'Single Player' is her debut novel.</p>
+    <nav aria-label="Main navigation">
+      <a href="single-player.html">Book</a>
+      <a href="bio.html">Bio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
   <main>
-    <section class="container">
-      <p class="mb-lg" style="background: url(assets/leone-venter-VieM9BdZKFo-unsplash.jpg); background-size: cover; padding: 2rem 0; overflow: hidden;">
-        <img src="assets/book.jpg" alt="Single Player Book Cover" class="deep-shadow" style="display: block; max-height: 50vh; margin: auto;">
-      </p>
-      <h2>Single Player</h2>
+    <section class="center">
+      <h2 style="margin-bottom: 0;">Single Player</h2>
+      <p>Romantic Comedy</p>
+      <p><img src="assets/book.jpg" style="height: 200px; margin: 0 auto;" alt="Cover image of 'Single Player'" /></p>
       <p>In 'Single Player,' two rival game developers find unexpected love amidst the quirky chaos of the gaming world, proving that sometimes, the best co-op adventures happen off-screen.</p>
-      <div class="button-row mb-lg">
-        <a class="button" href="single-player.html">More about Single Player</a>
-        <a class="button" href="single-player.html#buy">Buy</a>
+      <a href="#single-player">Plot summary</a>
+      <a href="#buy-single-player">Buy the book</a>
+    </section>
+    <section>
+      <h3>Events</h3>
+      <article class="event">
+        <h4>Lamplighter Brewing</h4>
+        <time datetime="2024-03-10T18:00">Tuesday March 10th, 2024, 6:00PM - 8:00PM</time>
+        <address>284 Broadway, Cambridge MA</address>
+      </article>
+      <article class="event">
+        <h4>Lamplighter Brewing</h4>
+        <time datetime="2024-03-10T18:00">Tuesday March 10th, 2024, 6:00PM - 8:00PM</time>
+        <address>284 Broadway, Cambridge MA</address>
+      </article>
+      <!-- Repeat for other events -->
+    </section>
+    
+<!-- 
+    <section id="single-player">
+      <div>
+        <h2>Single Player</h2>
+        <blockquote>
+          <p>Charming, witty, and surprisingly poignant. Alex and Jordan's journey is not one to be missed!</p>
+          <footer>
+            — <cite>LitLovers Magazine</cite>
+          </footer>
+        </blockquote>
+        <figure>
+          <img src="assets/book.jpg" style="max-height: 60vh; margin: 0 auto;" alt="Cover image" />
+          <figcaption>Cover of Single Player by --</figcaption>
+        </figure>
+        <p>Single Player is a heartwarming journey into the world of game development where rivalry turns to romance.</p>
+        <p>In this delightful romantic comedy, readers meet two spirited game developers, Alex and Jordan, who initially clash over their contrasting game design philosophies. Alex, with her imaginative and unconventional ideas, often finds herself at odds with Jordan, a by-the-books programmer who values structure and efficiency. Set against the backdrop of a bustling game studio, their story is a refreshing take on the complexities of modern love and the quirky world of video game creation. As deadlines loom and pressure mounts, these two talented developers discover that they have more in common than they thought, leading to sparks of both frustration and affection.</p>
+        <p>As the narrative unfolds, "Single Player" cleverly intertwines the exhilarating highs and lows of game development with the unpredictable path of love. With witty dialogue, humorous scenarios, and a cast of colorful supporting characters, the book is a testament to the unexpected ways in which love can blossom. As Alex and Jordan navigate their professional challenges, they also embark on a personal journey of understanding and acceptance. Their story is a reminder that sometimes, the most rewarding collaborations come from the most unlikely partnerships. Perfect for fans of romantic comedies and gaming culture, "Single Player" offers a unique blend of laughter, passion, and the magic of finding love where you least expect it.</p>
       </div>
-      <p class="attribution">Background image by <a href="https://unsplash.com/photos/magic-keyboard-beside-mug-and-click-pen-VieM9BdZKFo">Leone Venter on Unsplash</a></p>
+
+      <div class="center" id="buy-single-player">
+        <h3>Buy</h3>
+        <p>Local in Boston: Brookline Booksmith, Harvard Bookstore</p>
+        <p>Online: Amazon, Barnes & Noble, Books-A-Million, Powell’s, IndieBound</p>
+      </div>
+    
+      <div class="center">
+        <h3>Praise</h3>
+        <blockquote>
+          <p>An irresistible blend of humor and heart. 'Single Player' hits all the right notes in the symphony of love and games.</p>
+          <footer>– <cite>Reader's Realm</cite></footer>
+        </blockquote>
+        <blockquote>
+          <p>A masterclass in romantic comedy. This book will make you laugh, cry, and fall in love with love all over again.</p>
+          <footer>– <cite>The Novel Enthusiast</cite></footer>
+        </blockquote>
+        <blockquote>
+          <p>Brilliantly captures the spirit of modern romance amidst the intriguing backdrop of video game development. A must-read!</p>
+          <footer>– <cite>Contemporary Romantics Journal</cite></footer>
+        </blockquote>
+      </div>
+    </section>
+    
+    <section id="bio" style="position: relative; max-width: none; width: 100%; padding: 0; margin: 0;">
+      <div class="container">
+        <h2>About Tara</h2>
+        <div style="position: absolute; left: -30px; top: 0px; bottom: 0px; padding-top: 180px;">
+          <figure style="border: solid 2px white; position: sticky; left: 0; top: 50vh; transform:translateY(-50%);">
+            <img src="assets/tara-360w.jpg" alt="description" style="height:260px; display: block;" />
+            <figcaption style="position: absolute; left: 35px; margin-top:3px;">Photo by Nicole Loeb</figcaption>
+          </figure>
+        </div>
+        <p>(GPT generated) Tara Tai is a distinguished author based in Boston, Massachusetts, celebrated for her engaging storytelling and rich, imaginative narratives. Tara's journey into the literary world began with her passion for writing, nurtured through years of dedicated practice and a deep love for literature. Her academic path led her to Harvard Business School (HBS), where she graduated with distinction. The combination of her creative talents and business savvy has been instrumental in her successful writing career, enabling her to navigate the literary landscape with both artistic flair and strategic prowess.</p>
+        <p>When not crafting compelling stories, Tara immerses herself in the fantastical world of Dungeons and Dragons (D&D). As an avid Dungeon Master (DM), she brings her storytelling skills to the table, creating intricate worlds and adventures for her friends. These gaming sessions showcase her imaginative power and ability to bring stories to life in any form, much to the delight of her fellow players. For Tara, D&D is more than a hobby; it's a vibrant outlet for her creativity and a testament to her ability to engage and entertain.</p>
+        <p style="display: flex; justify-content: center; gap: 1px;">
+          <img src="assets/audrey-ginko.jpg" alt="description" style="height: 200px;"/>
+          <img src="assets/ginko.jpg" alt="description" style="height: 200px;"/>
+        </p>
+        <p>Tara's personal life is as fulfilling as her professional one, shared with her wife, Audrey. Together, they enjoy a harmonious life in Boston, filled with intellectual conversations and shared moments of joy. Their family is completed by their beloved dog, Ginko, who brings both joy and a bit of playful chaos. Tara, a dedicated pet parent, is often seen in Boston's parks, ensuring Ginko's well-being and enjoying the city's beauty. This blend of professional achievement, creative expression, and a rich personal life establishes Tara Tai as a notable and respected figure in Boston's literary community.</p>
+      </div>
     </section>
 
-    <!-- <section id="events" class="container">
-      <h3>Events</h3>
+    <section id="contact">
+      <div class="center">
+        <h2>Contact</h2>
+        <p>To send Tara a direct message, <a href="https://docs.google.com/forms/d/e/1FAIpQLScnlNzL4a7ByzIc1ij26Vr8yKigK7NvlVnGM-g-bAMS0jCNJQ/viewform">please fill out this Google Form</a></p>
+      </div>
 
-      <article class="event">
-        <div class="event-details">
-          <h4>Some Bookstore or Cafe</h4>
-          <address>0000 Massachusetts Avenue, Boston, MA</address>
-          <p>
-            <time datetime="2024-03-18T18:00">6:00 PM</time> – 
-            <time datetime="2024-03-18T20:00">8:00 PM</time>
-          </p>
-        </div>
-        <footer>
-          <p>The event is free, but please register to guarantee seating.</p>
-          <a href="https://example.com/register" class="register-button">Register</a>
-        </footer>
-      </article>
+      <div class="center">
+        <h3>Representation</h3>
+        <p>Abby Saul of the Lark Group <br/><a href="mailto:abby@larkwords.com">abby@larkwords.com</a></p>
+        
+      </div> 
+      <div class="center">
+        <h3>News</h3>
+        <p>To stay up to date with what Tara is up to and where to find the best noodle soup, <a href="#">subscribe on some platform</a>.</p>
+      </div>
+      <div class="center">
+        <h3>Social Media</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Tiktok</a></li>
+        </ul>
+      </div>
     </section> -->
   </main>
-  <footer>
-    <mini-bio></mini-bio>
-    <social-row></social-row>
-    <p class="attribution center">Website by Adam Butterworth</p>
-  </footer>
 </body>
 </html>
