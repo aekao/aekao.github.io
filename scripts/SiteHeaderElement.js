@@ -1,10 +1,9 @@
 const templateString = `
 <style>
-
 header {
   background-color: var(--canvas-primary);
   color: var(--color-secondary);
-  padding: 80px;
+  padding: 80px 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,7 +37,6 @@ nav a {
   color: var(--color-primary);
   text-decoration: none;
 }
-
 @media (max-width: 999px) {
   header.minimal-style  {
     flex-direction: row;
@@ -58,7 +56,11 @@ nav a {
     flex-direction: row;
   }
 }
-
+@media (min-width: 800px) {
+  header {
+    padding: 80px;
+  }
+}
 @media (min-width: 1000px) {
   header {
     position: fixed;
@@ -68,7 +70,6 @@ nav a {
     width: 500px;
   }
 }
-
 </style>
 
 <div id="sentinel"></div>
