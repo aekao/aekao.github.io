@@ -5,62 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Tara Tai, Author of Single Player">
   <title>Tara Tai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Rubik+Mono+One&family=Rubik:wght@300..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
-  <script type="module" src="scripts/SiteHeaderElement.js"></script>
-  <script type="module" src="scripts/SiteElements.js"></script>
+  <script src="scripts/SiteHeaderElement.js"></script>
   <style>
-    .book-cover {
-      max-height: 75vh;
-      display: flex;
+    .event {
+      border: solid 1px black;
+      padding: 16px;
+      display: block;
+      margin: var(--type-margin-md);
     }
-    .book-cover img {
-      max-height: 100%;
-      object-fit: cover;
-      border-radius: 4px;
-      width: 100%;
+    .event address {
+      color: var(--color-subdued);
+      font-style: normal;
+      font-size: 12px;
     }
   </style>
 </head>
 <body>
-  <site-header></site-header>
+  <site-header class="inverted"></site-header>
   <main>
-    <section class="container">
-      <p class="mb-lg" style="background: url(assets/leone-venter-VieM9BdZKFo-unsplash.jpg); background-size: cover; padding: 2rem 0; overflow: hidden;">
-        <img src="assets/book.jpg" alt="Single Player Book Cover" class="deep-shadow" style="display: block; max-height: 50vh; margin: auto;">
-      </p>
-      <h2>Single Player</h2>
+    <div class="container center">
+      <h2 style="margin-bottom: 0;">Single Player</h2>
+      <p>Romantic Comedy</p>
+      <p><img src="assets/book.jpg" style="height: 200px; margin: 0 auto;" alt="Cover image of 'Single Player'" /></p>
       <p>In 'Single Player,' two rival game developers find unexpected love amidst the quirky chaos of the gaming world, proving that sometimes, the best co-op adventures happen off-screen.</p>
-      <div class="button-row mb-lg">
-        <a class="button" href="single-player.html">More about Single Player</a>
-        <a class="button" href="single-player.html#buy">Buy</a>
-      </div>
-      <p class="attribution">Background image by <a href="https://unsplash.com/photos/magic-keyboard-beside-mug-and-click-pen-VieM9BdZKFo">Leone Venter on Unsplash</a></p>
-    </section>
-
-    <!-- <section id="events" class="container">
+      <a href="single-player.html">Plot summary</a>
+      <a href="single-player.html#buy">Buy the book</a>
+    </div>
+    <div class="container">
       <h3>Events</h3>
-
       <article class="event">
-        <div class="event-details">
-          <h4>Some Bookstore or Cafe</h4>
-          <address>0000 Massachusetts Avenue, Boston, MA</address>
-          <p>
-            <time datetime="2024-03-18T18:00">6:00 PM</time> – 
-            <time datetime="2024-03-18T20:00">8:00 PM</time>
-          </p>
-        </div>
-        <footer>
-          <p>The event is free, but please register to guarantee seating.</p>
-          <a href="https://example.com/register" class="register-button">Register</a>
-        </footer>
+        <h4>Lamplighter Brewing</h4>
+        <time datetime="2024-03-10T18:00">Tuesday March 10th, 2024, 6:00PM - 8:00PM</time>
+        <address>284 Broadway, Cambridge MA</address>
       </article>
-    </section> -->
+      <article class="event">
+        <h4>Lamplighter Brewing</h4>
+        <time datetime="2024-03-10T18:00">Tuesday March 10th, 2024, 6:00PM - 8:00PM</time>
+        <address>284 Broadway, Cambridge MA</address>
+      </article>
+    </div>
   </main>
-  <footer>
-    <mini-bio></mini-bio>
-    <social-row></social-row>
-    <p class="attribution center">Website by Adam Butterworth</p>
-  </footer>
 </body>
 </html>
