@@ -1,10 +1,13 @@
 /* Reset */
+
 body, html {
   margin: 0;
   padding: 0;
 }
 
+
 /* Variables */
+
 :root {
   --heading-font-family: "Rubik Mono One", monospace;
   --body-font-family: "Rubik", sans-serif;
@@ -25,7 +28,9 @@ body, html {
   color: var(--color-secondary);
 }
 
+
 /* Type & Margin */
+
 body {
   font-family: var(--body-font-family);
   font-optical-sizing: auto;
@@ -69,7 +74,6 @@ blockquote footer {
 cite {
   font-style: normal;
 }
-
 figure {
   margin: 0;
 }
@@ -81,32 +85,30 @@ img {
   display: block;
   max-width: 100%;
 }
-
 .center {
   text-align: center;
 }
 
 
 /* Layout */
+
 @media (min-width: 1000px) {
   body {
     padding-left: 500px;
   }
 }
-
-/* Main */
 main {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
-  padding: 80px 4vh;
   min-height: 100vh;
   box-sizing: border-box;
 }
-
-/* Sections */
+section {
+  padding: 80px 4vh;
+}
 .container {
   margin: 0 auto;
   max-width: 500px;
@@ -118,4 +120,55 @@ main {
 }
 h2, h3 {
   text-align: center;
+}
+.anchor {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  position: relative;
+  top: -64px;
+}
+@media (min-width: 1000px) {
+  .anchor {
+    top: 0;
+  }
+}
+
+
+/* Elements */
+
+.event {
+  border: solid 1px black;
+  padding: 16px;
+  display: block;
+  margin: var(--type-margin-md);
+}
+.event address {
+  color: var(--color-subdued);
+  font-style: normal;
+  font-size: 12px;
+}
+
+#portrait {
+  width: 160px;
+  margin: 0 auto 1em; 
+}
+#portrait img {
+  border: solid 2px white;
+}
+
+@media (min-width: 1340px) {
+  #portrait {
+    position: fixed;
+    left: 500px;
+    top: 50vh;
+    width: 160px;
+    transform: translateY(-50%) translateX(-30px);
+    z-index: 300;
+  }
+  #portrait figcaption {
+    position: absolute;
+    left: 35px;
+    margin-top:3px;
+  }
 }
