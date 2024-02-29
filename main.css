@@ -94,13 +94,14 @@ body {
   font-style: normal;
   color: var(--color-secondary);
   line-height: 1.4;
-  font-size: 14px;
+  font-size: 16px;
 }
 h1, h2, h3 {
   font-family: var(--heading-font-family);
   color: var(--color-primary);
   margin: var(--type-margin-md);
   font-size: inherit;
+  font-weight: 400;
 }
 h4 {
   font-size: inherit;
@@ -118,7 +119,7 @@ blockquote {
 }
 blockquote p {
   font-family: var(--accent-font-family);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   font-style: italic;
   margin-bottom: .5rem;
@@ -136,6 +137,13 @@ figure {
 figcaption {
   color: var(--color-subdued);
   font-size: 10px;
+  text-align: center;
+}
+.small {
+  font-size: 10px;
+}
+.subdued {
+  color: var(--color-subdued);
 }
 img {
   display: block;
@@ -144,7 +152,16 @@ img {
 .center {
   text-align: center;
 }
-
+p.lead {
+  text-align: center;
+  display: block;
+  margin: 0 auto 1.5rem;
+  font-family: var(--accent-font-family);
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 40em;;
+  letter-spacing: .01em;
+}
 
 /* Layout */
 
@@ -164,10 +181,15 @@ main {
 }
 section {
   padding: 80px 4vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
 }
 .container {
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 550px;
   box-sizing: border-box;
   width: 100%;
 }
@@ -192,7 +214,11 @@ h2, h3 {
 
 
 /* Elements */
-
+.row {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
 .event {
   border: solid 1px black;
   padding: 16px;
@@ -211,20 +237,4 @@ h2, h3 {
 }
 #portrait img {
   border: solid 2px white;
-}
-
-@media (min-width: 1340px) {
-  #portrait {
-    position: fixed;
-    left: 500px;
-    top: 50vh;
-    width: 160px;
-    transform: translateY(-50%) translateX(-30px);
-    z-index: 300;
-  }
-  #portrait figcaption {
-    position: absolute;
-    left: 35px;
-    margin-top:3px;
-  }
 }
