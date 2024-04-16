@@ -122,7 +122,7 @@ nav a {
         </span>
       </a>
     </h1>
-    <p>Tara Tai is an Asian American writer living in Boston, where they spend most of their time playing TTRPGs and romancing video game NPCs. She holds degrees from Harvard University and Harvard Business School. 'Single Player' is her debut novel.</p>
+    <p><!--Tara Tai is an Asian American writer living in Boston, where they spend most of their time playing TTRPGs and romancing video game NPCs. She holds degrees from Harvard University and Harvard Business School. 'Single Player' is her debut novel.--></p>
     <nav aria-label="Main navigation">
       <a href="#single-player">Book</a>
       <a href="#bio">Bio</a>
